@@ -9,7 +9,7 @@ const Data = () => {
       try{
         const res = await fetch(url);
         const data = await res.json();
-        console.log(data.hits);
+        console.log(data);
         // isLoading = false;
       }catch(error){
         console.log(error);
@@ -17,7 +17,7 @@ const Data = () => {
     };
     
     useEffect(()=>{
-      fetchApiData(api);
+      // fetchApiData(api);
     },[]);
     if(isLoading){
       return(
