@@ -3,9 +3,8 @@ import React, { useEffect } from 'react'
 const Data = () => {
   let isLoading = true;
   
-  
   let api = 'http://hn.algolia.com/api/v1/search?query=...';
-    const fetchApiData = async(url) =>{
+    const fetchApiData = async (url) =>{
       try{
         const res = await fetch(url);
         const data = await res.json();
